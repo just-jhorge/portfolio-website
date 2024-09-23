@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Navbar from "@/components/navbar";
 
 import "../styles/globals.css";
+import Footer from "@/components/footer";
 
 export const metadata: Metadata = {
   title: "george.dev",
@@ -16,9 +17,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="relative font-grotesk">
+      <body className="relative font-inter">
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );

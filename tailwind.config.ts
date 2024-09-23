@@ -52,7 +52,8 @@ const config: Config = {
         },
       },
       fontFamily: {
-        grotesk: ["Space Mono", "sans-serif"],
+        grotesk: ["Space Grotesk", "sans-serif"],
+        inter: ["Inter", "sans-serif"],
       },
       borderRadius: {
         lg: "var(--radius)",

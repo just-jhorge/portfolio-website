@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { GitHubLogoIcon } from "@radix-ui/react-icons";
 
 const Navbar = () => {
   return (
@@ -8,7 +9,7 @@ const Navbar = () => {
           &gt;_
           <span className="text-yellow-600">george</span>
         </Link>
-        <div className="flex items-center space-x-3 sm:space-x-5 *:transition-colors *:duration-300 *:text-sm">
+        <div className="flex items-center space-x-5 *:transition-colors *:duration-300 *:text-sm">
           <Link href="/#about" className="hover:text-emerald-500">
             about
           </Link>
@@ -19,7 +20,7 @@ const Navbar = () => {
             projects
           </Link>
           <Link href="/travel" className="hover:text-emerald-500">
-            travel
+            <GitHubLogoIcon className="h-5 w-5" />
           </Link>
         </div>
       </div>
