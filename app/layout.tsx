@@ -5,7 +5,10 @@ import "../styles/globals.css";
 import Footer from "@/components/footer";
 
 export const metadata: Metadata = {
-  title: "george.dev",
+  title: {
+    template: "%s | GSAfrifa",
+    absolute: "Hi 👋🏾 GSAfrifa",
+  },
   description:
     "Hello World, I am George Sarpong Afrifa, a Frontend Developer based in Accra, Ghana. I am just a mail away. Contact me",
 };

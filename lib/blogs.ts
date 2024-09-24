@@ -4,7 +4,7 @@ import { marked } from "marked";
 import matter from "gray-matter";
 import { Blog, BlogMetaData } from "@/types";
 
-const blogsDirectory = path.join(process.cwd(), "content");
+const blogsDirectory = path.join(process.cwd(), "public", "content");
 
 export function getBlogSlugs(): string[] {
   return fs.readdirSync(blogsDirectory);

@@ -5,7 +5,7 @@ interface PageProps {
   params: { slug: string };
 }
 
-export async function generateStaticParams() {
+export function generateStaticParams() {
   const slugs = getBlogSlugs().map((slug) => ({
     slug: slug.replace(/\.md$/, ""),
   }));
@@ -13,10 +13,14 @@ export async function generateStaticParams() {
   return slugs;
 }
 
+export function generateMetadata({ params: { slug } }: PageProps) {
+  const blog = getBlogBySlug(slug);
+
+  return { title: blog.metadata.title || "Blog Post" };
+}
+
 const Page = ({ params: { slug } }: PageProps) => {
   const blog: Blog = getBlogBySlug(slug);
-
-  console.log(blog.content);
 
   return (
     <article className="container space-y-5 py-16">
