@@ -1,5 +1,6 @@
 import Link from "next/link";
 import {
+  GitHubLogoIcon,
   InstagramLogoIcon,
   LinkedInLogoIcon,
   TwitterLogoIcon,
@@ -12,7 +13,7 @@ const Footer = () => {
         <div className="space-y-0.5">
           <p>&copy; 2024 GSAfrifa. All rights reserved.</p>
           <p>
-            Cooked by <span className="text-orange-500">myself</span> with
+            👩🏾‍🍳 Cooked by <span className="text-orange-500">me</span> with
             inspiration from{" "}
             <Link href="https://degreat.co.uk">
               <span className="text-blue-500">GR</span>
@@ -37,6 +38,9 @@ const Footer = () => {
           </Link>
           <Link href="/" className="hover:text-blue-300">
             <LinkedInLogoIcon className="h-5 w-5" />
+          </Link>
+          <Link href="/" className="hover:text-white">
+            <GitHubLogoIcon className="h-5 w-5" />
           </Link>
         </div>
       </div>

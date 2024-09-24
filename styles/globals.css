@@ -35,6 +35,30 @@ body:after {
   pointer-events: none;
 }
 
+article > div > h2 {
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+}
+
+article > div > p > a,
+article > div > a {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+blockquote {
+  display: block;
+  width: 100%;
+  font-size: 18px;
+  padding: 10px 20px;
+  border-left: 3px solid #f39c12;
+  border-radius: 0px 10px 10px 0px;
+  font-weight: bold;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;
